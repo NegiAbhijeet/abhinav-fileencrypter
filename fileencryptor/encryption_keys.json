@@ -1,0 +1,70 @@
+{
+    "computer network (1).docx": {
+        "algorithm": "AES",
+        "key": "7a1507a2d94186d3bb764d23d8ec6206"
+    },
+    "abhinavds1.docx": {
+        "algorithm": "AES",
+        "key": "5f2dbd77900a0977b8a7386350668a47"
+    },
+    "computer network.docx": {
+        "algorithm": "AES",
+        "key": "73c8e06b8e0f6ab8e9e09400ed0baab6"
+    },
+    "pbl project info-1.pdf": {
+        "algorithm": "AES",
+        "key": "3270a333f8178f0a0d8026357b9568fa"
+    },
+    "abhi report  doc .pdf": {
+        "algorithm": "AES",
+        "key": "e795f6e23ac17899482bc0cb7017e7fe"
+    },
+    "abhip1.pdf": {
+        "algorithm": "AES",
+        "key": "2d14a7942a44384cf7669ba26bbdc726"
+    },
+    "New Microsoft Word Document (1).docx": {
+        "algorithm": "Blowfish",
+        "key": "85e61083f13a00d8adb4a9938d82f2f7"
+    },
+    "pbl project info-1 (1).pdf": {
+        "algorithm": "Blowfish",
+        "key": "9ee960dd39fc5b38aab1f3d32b50d935"
+    },
+    "lms open step for students.docx": {
+        "algorithm": "AES",
+        "key": "0254b61a69264d9eb188a05464e86b17"
+    },
+    "abhinavnegi_2321032_operatingsystem_4.pdf": {
+        "algorithm": "Fernet",
+        "key": "4372596f574a437277676341427930546d555359365a667059583174722d76726f66316f4b6873544c78413d"
+    },
+    "abhip1 (1).pdf": {
+        "algorithm": "DES",
+        "key": "a27ec76c5c94687a"
+    },
+    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).xls": {
+        "algorithm": "Blowfish",
+        "key": "761672a11a1149167b3650ba95ae71ea"
+    },
+    "updated rescheduled seating plan 01-04-2025 (2).xlsx": {
+        "algorithm": "Blowfish",
+        "key": "fe20a4b593a3509fd9c511dc76c43400"
+    },
+    "duplicate entries.xlsx": {
+        "algorithm": "ChaCha20",
+        "key": "011c0b0a67dfecf837e9b473ec8e4d352b957b4c58105dd289ab0a169325e9a0a09608b0ef3cc944"
+    },
+    "Abhinet.pdf": {
+        "algorithm": "AES",
+        "key": "ce8f3b1bb2826ef211fb04324d1aeb66"
+    },
+    "abhipn .docx": {
+        "algorithm": "AES",
+        "key": "9203c4df078c5d064f2937259605842653645d7f0b7f15499209e2bfc7432efce6e8145bb1ef03fac2d2d4ca35e9ee86"
+    },
+    "abhip.pdf": {
+        "algorithm": "AES",
+        "key": "bd15a91eda27f27f5e47a19fd5ed26014ce75e61c7a0a7eaa1b54d9d7ba8231f"
+    }
+}
