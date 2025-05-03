@@ -496,7 +496,7 @@
 #     app = FileEncryptorApp(root)
 #     root.mainloop()
 
-
+#start from here
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from Crypto.Cipher import AES, DES, Blowfish, ChaCha20
