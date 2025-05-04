@@ -579,18 +579,53 @@ def load_key_store():
 
 def save_key_to_store(file_path, algorithm, key):
     store = load_key_store()
-    base_name = os.path.basename(file_path)
+    base_name = os.path.basename(file_path).strip()
     store[base_name] = {"algorithm": algorithm, "key": key.hex() if isinstance(key, bytes) else key}
     with open(KEY_STORE_FILE, 'w') as f:
         json.dump(store, f, indent=4)
 
 def open_file(path):
-    if platform.system() == "Windows":
-        os.startfile(path)
-    elif platform.system() == "Darwin":
-        subprocess.call(["open", path])
-    else:
-        subprocess.call(["xdg-open", path])
+    ext = os.path.splitext(path)[1].lower()
+
+    # Mapping common file extensions to appropriate apps
+    app_map = {
+        '.docx': 'libreoffice',     # Use LibreOffice for Word documents
+        '.doc': 'libreoffice',
+        '.xlsx': 'libreoffice',
+        '.xls': 'libreoffice',
+        '.pptx': 'libreoffice',
+        '.ppt': 'libreoffice',
+        '.pdf': 'sumatrapdf',       # Use SumatraPDF or other PDF reader
+        '.txt': 'notepad',          # Notepad for text files
+    }
+
+    # Detect OS
+    system = platform.system()
+
+    if ext in app_map:
+        app = app_map[ext]
+        try:
+            if system == "Windows":
+                subprocess.Popen([app, path], shell=True)
+            elif system == "Darwin":
+                subprocess.call([app, path])
+            else:  # Linux
+                subprocess.call([app, path])
+            return
+        except Exception as e:
+            print(f"⚠️ Could not open with {app}: {e}")
+
+    # Fallback to default app
+    try:
+        if system == "Windows":
+            os.startfile(path)
+        elif system == "Darwin":
+            subprocess.call(["open", path])
+        else:
+            subprocess.call(["xdg-open", path])
+    except Exception as e:
+        print(f"❌ Failed to open file: {e}")
+
 
 class FileEncryptorApp:
     def __init__(self, root):
@@ -609,20 +644,37 @@ class FileEncryptorApp:
 
         tk.Button(root, text="📁 Select Files", command=self.select_files).pack(pady=5)
         tk.Button(root, text="🔒 Encrypt Files", command=self.encrypt_files).pack(pady=5)
-        tk.Button(root, text="🔓 Decrypt Files", command=self.decrypt_files).pack(pady=5)
+        tk.Button(root, text="🔓 Decrypt Files", command=self.start_decryption).pack(pady=5)
         tk.Button(root, text="🔑 View Saved Keys", command=self.view_keys).pack(pady=5)
 
         self.status_text = tk.Text(root, height=15, width=70, state='disabled', bg="#f0f0f0")
         self.status_text.pack(pady=10)
+        
+    def start_decryption(self):
+        self.select_encrypted_files()  # Show the file dialog for encrypted files
+        if self.selected_files:  # Only proceed if files were selected
+            self.decrypt_files()  # Call the decryption method
 
     def select_files(self):
         files = filedialog.askopenfilenames(title="Select files")
         if files:
             self.selected_files = list(files)
             self.log(f"Selected {len(files)} file(s).")
+    
+    def select_encrypted_files(self):
+        # Create a tuple of allowed extensions based on ALGORITHMS keys
+        extensions = [f"*.{algo.lower()}" for algo in ALGORITHMS]
+        filetypes = [("Encrypted files", " ".join(extensions))]
+        
+        files = filedialog.askopenfilenames(title="Select encrypted files", filetypes=filetypes)
+        if files:
+            self.selected_files = list(files)
+            self.log(f"Selected {len(files)} encrypted file(s).")
+
 
     def encrypt_files(self):
         algo = self.algo_var.get()
+        new_selected_files = []
         for file in self.selected_files:
             try:
                 with open(file, 'rb') as f:
@@ -633,15 +685,29 @@ class FileEncryptorApp:
                     f.write(encrypted_data)
                 save_key_to_store(file, algo, key)
                 self.log(f"✅ Encrypted: {os.path.basename(file)} → {os.path.basename(out_path)}")
+                new_selected_files.append(out_path)
+
             except Exception as e:
                 self.log(f"❌ Error encrypting {file}: {e}")
+        self.selected_files = new_selected_files
 
     def decrypt_files(self):
         for file in self.selected_files:
             try:
                 base_name = os.path.basename(file)
-                orig_name = base_name.rsplit('.', 1)[0]
+                orig_name = None
+                for ext in ALGORITHMS.keys():
+                    if base_name.endswith(f".{ext.lower()}"):
+                        orig_name = base_name[:-(len(ext) + 1)]  # remove ".aes" or ".fernet" etc.
+                        orig_name = orig_name.strip()
+
+                        break
+                if not orig_name:
+                    self.log(f"❌ Unsupported or unknown file extension for {base_name}")
+                    continue
                 keys = load_key_store()
+                print("Stored keys:", list(load_key_store().keys()))
+
                 if orig_name not in keys:
                     self.log(f"❌ No key found for {base_name}")
                     continue
@@ -651,7 +717,8 @@ class FileEncryptorApp:
                 with open(file, 'rb') as f:
                     data = f.read()
                 decrypted_data = ALGORITHMS[algorithm]['decrypt'](data, key)
-                out_path = file.replace('.' + algorithm.lower(), '_decrypted')
+                orig_extension = os.path.splitext(file.replace(f".{algorithm.lower()}", ''))[1]
+                out_path = file.replace(f".{algorithm.lower()}", f"_decrypted{orig_extension}")
                 with open(out_path, 'wb') as f:
                     f.write(decrypted_data)
                 open_file(out_path)
@@ -675,3 +742,4 @@ if __name__ == '__main__':
     root = tk.Tk()
     app = FileEncryptorApp(root)
     root.mainloop()
+    
