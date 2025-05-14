@@ -1,7 +1,8 @@
 {
     "computer network (1).docx": {
-        "algorithm": "AES",
-        "key": "0c85e95333c634f488c340a63dbf1ecd"
+        "algorithm": "pbkdf2-AES",
+        "key": "a24587f57370d400c21725e5151794d9",
+        "salt": "7e097f12109024ae3746f35abeeeacf6"
     },
     "abhinavds1.docx": {
         "algorithm": "AES",
@@ -20,8 +21,9 @@
         "key": "e795f6e23ac17899482bc0cb7017e7fe"
     },
     "abhip1.pdf": {
-        "algorithm": "Fernet",
-        "key": "590N9kvtRiTmWfAIW3LrUlpIy87UDF8v-ncYnWvbqfE="
+        "algorithm": "pbkdf2-AES",
+        "key": "ab28ca61619af13d065494ce5b855c34",
+        "salt": "290cfca53c558ede304d0167fb6c556a"
     },
     "New Microsoft Word Document (1).docx": {
         "algorithm": "Blowfish",
@@ -32,43 +34,115 @@
         "key": "5002fe13703d2eaf77c9f317d30dd919"
     },
     "lms open step for students.docx": {
-        "algorithm": "DES",
-        "key": "32d6ef4b7d6fa509"
+        "algorithm": "pbkdf2-AES",
+        "key": "04c2c8fc89cac8e22dee78058ff687a5",
+        "salt": "0070517aaedac7e54abf7d97f55bd278"
     },
     "abhinavnegi_2321032_operatingsystem_4.pdf": {
-        "algorithm": "DES",
-        "key": "7b14defabb16d36a"
+        "algorithm": "pbkdf2-AES",
+        "key": "3f3028c7cacfc8c1c7a0b7977c4131a6",
+        "salt": "fbe069fe1467b0ec700522040873e98e"
     },
     "abhip1 (1).pdf": {
-        "algorithm": "DES",
-        "key": "6507e970b0a544b8"
+        "algorithm": "pbkdf2-AES",
+        "key": "7719cefe0582803abaf13721d0d92ff9",
+        "salt": "0691f44b4f3323d5ad48f202f58ac4eb"
     },
     "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).xls": {
-        "algorithm": "ChaCha20",
-        "key": "989a674874c6b834fb7dab5ece0702d52800466e51cbaaddb2410a60e9c3db023c2badb80f7d8838"
+        "algorithm": "pbkdf2-AES",
+        "key": "7d9acdf1fcf15321decab439457047a3",
+        "salt": "8c007feab722cc27c38772e44ace3041"
     },
     "updated rescheduled seating plan 01-04-2025 (2).xlsx": {
-        "algorithm": "Blowfish",
-        "key": "fe20a4b593a3509fd9c511dc76c43400"
+        "algorithm": "pbkdf2-AES",
+        "key": "09dcaddf346876d12316aabdbfaa78a7",
+        "salt": "ad7761b0e045e24436365ac8caa0d1d0"
     },
     "duplicate entries.xlsx": {
-        "algorithm": "ChaCha20",
-        "key": "011c0b0a67dfecf837e9b473ec8e4d352b957b4c58105dd289ab0a169325e9a0a09608b0ef3cc944"
+        "algorithm": "pbkdf2-AES",
+        "key": "3b4f58f60fc1af2e315d82557bbe5a9e",
+        "salt": "6adc17aa8d4be4832be5d68d2b7af388"
     },
     "Abhinet.pdf": {
-        "algorithm": "Fernet",
-        "key": "xsXqt-bfl94IbxOR4_XGcDX4ITo5w9128blAUhKJQPg="
+        "algorithm": "pbkdf2-AES",
+        "key": "8e1cfdcd7206d303e406ea4c7e4f0c15",
+        "salt": "554e306ca04d40e9446bc87110a369b0"
     },
     "abhipn .docx": {
         "algorithm": "AES",
         "key": "3cc86052b095ce232f5afae9dae286c5"
     },
     "abhip.pdf": {
-        "algorithm": "AES",
-        "key": "bd15a91eda27f27f5e47a19fd5ed26014ce75e61c7a0a7eaa1b54d9d7ba8231f"
+        "algorithm": "pbkdf2-AES",
+        "key": "02a42dc8b691723a74c10017286cbffa",
+        "salt": "28e8c5628f902c64be4070a337fe1e41"
     },
     "abhip (1).docx": {
+        "algorithm": "pbkdf2-AES",
+        "key": "aa4df5c2af4c4b0c310e0f078e8dd870",
+        "salt": "470f604c543952f97a1a1a0e233cba23"
+    },
+    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).xls.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "50b9aa8f6df8dcd2bce7acab00a0482d",
+        "salt": "e9a127dde249ee4fa7c5dbd6028207bc"
+    },
+    "lms open step for students.aes": {
+        "algorithm": "scrypt-AES",
+        "key": "d1d9e4757be58f473eebd71112c3e32f",
+        "salt": "49cfe8d5ff41ba15880f74e3b8d3aaac",
+        "orig_ext": ".docx"
+    },
+    "abhinavnegi_2321032_operatingsystem_4.aes": {
+        "algorithm": "scrypt-AES",
+        "key": "7066f503b6ffb40e3f9fb3efee93c41e",
+        "salt": "612abb18da8a785b9ad97b5ddf23b38f",
+        "orig_ext": ".pdf"
+    },
+    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "6c1d4112910a697a3415514484a61867",
+        "salt": "1a372478769de2caa350e2e05d7b0c6b",
+        "orig_ext": ".xls"
+    },
+    "updated rescheduled seating plan 01-04-2025 (2).aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "ae1e29a6b156fefe1935ba739957b9e0",
+        "salt": "76578b621dc0cd9fe51a4d9279218f3e",
+        "orig_ext": ".xlsx"
+    },
+    "abhip1 (1).aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "0d27fe002e6773d3d4700f3d5f62c7f2",
+        "salt": "59f93818a1d2afb6231712f2e033fa0d",
+        "orig_ext": ".pdf"
+    },
+    "abhip (1).aes": {
+        "algorithm": "scrypt-AES",
+        "key": "ead4db9a8e6a654dbc97cc7bb42991a8",
+        "salt": "dd9130ccbf4527ecbb2472315e7f694f",
+        "orig_ext": ".docx"
+    },
+    "Abhinet.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "dfdf91ad3f9ebbe5c7ab44c62b5b2e10",
+        "salt": "a7c16c65768a37ea5c5e7b89f1697d50",
+        "orig_ext": ".pdf"
+    },
+    "abhip1.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "2080c4c8de636522d6b3adce63bed91a",
+        "salt": "7bc444242ebb612abf4e0bfee00a4dec",
+        "orig_ext": ".pdf"
+    },
+    "lms open step for students.fernet": {
         "algorithm": "Fernet",
-        "key": "aP0Bo8C4BfEPictPtKrvFKSn4Ki7DmP8cFjQKDlZqWE="
+        "key": "457a733644504a734f75776c656e4f4d52694f6138584b69734978616b68454c54454a6463304c70766b343d",
+        "orig_ext": ".docx"
+    },
+    "abhinavnegi_2321032_operatingsystem_4.fernet": {
+        "algorithm": "Fernet",
+        "key": "33756f4431386379705f4a4e662d566a776c53366c564b586e3357796f4c486f44516b3354465f7a75346f3d",
+        "orig_ext": ".pdf"
     }
 }
