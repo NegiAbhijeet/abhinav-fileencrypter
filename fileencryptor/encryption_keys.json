@@ -88,21 +88,18 @@
         "salt": "e9a127dde249ee4fa7c5dbd6028207bc"
     },
     "lms open step for students.aes": {
-        "algorithm": "scrypt-AES",
-        "key": "d1d9e4757be58f473eebd71112c3e32f",
-        "salt": "49cfe8d5ff41ba15880f74e3b8d3aaac",
+        "algorithm": "Hex-AES",
+        "key": "037b3fb836b3b477784a9db948f307b0",
         "orig_ext": ".docx"
     },
     "abhinavnegi_2321032_operatingsystem_4.aes": {
-        "algorithm": "scrypt-AES",
-        "key": "7066f503b6ffb40e3f9fb3efee93c41e",
-        "salt": "612abb18da8a785b9ad97b5ddf23b38f",
+        "algorithm": "Hex-AES",
+        "key": "037b3fb836b3b477784a9db948f307b0",
         "orig_ext": ".pdf"
     },
     "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).aes": {
-        "algorithm": "pbkdf2-AES",
-        "key": "6c1d4112910a697a3415514484a61867",
-        "salt": "1a372478769de2caa350e2e05d7b0c6b",
+        "algorithm": "Hex-AES",
+        "key": "b847c77c18c34fdc1773bc2eb10fb8644a37130d5018d40ed33bb34796b1e1f0",
         "orig_ext": ".xls"
     },
     "updated rescheduled seating plan 01-04-2025 (2).aes": {
@@ -112,9 +109,8 @@
         "orig_ext": ".xlsx"
     },
     "abhip1 (1).aes": {
-        "algorithm": "pbkdf2-AES",
-        "key": "0d27fe002e6773d3d4700f3d5f62c7f2",
-        "salt": "59f93818a1d2afb6231712f2e033fa0d",
+        "algorithm": "Hex-AES",
+        "key": "22116e3dec53e8d07206b2438a96743f752ce0540c45a7b88628322bddd7e1fe",
         "orig_ext": ".pdf"
     },
     "abhip (1).aes": {
@@ -124,9 +120,8 @@
         "orig_ext": ".docx"
     },
     "Abhinet.aes": {
-        "algorithm": "pbkdf2-AES",
-        "key": "dfdf91ad3f9ebbe5c7ab44c62b5b2e10",
-        "salt": "a7c16c65768a37ea5c5e7b89f1697d50",
+        "algorithm": "Hex-AES",
+        "key": "b847c77c18c34fdc1773bc2eb10fb8644a37130d5018d40ed33bb34796b1e1f0",
         "orig_ext": ".pdf"
     },
     "abhip1.aes": {
@@ -143,6 +138,182 @@
     "abhinavnegi_2321032_operatingsystem_4.fernet": {
         "algorithm": "Fernet",
         "key": "33756f4431386379705f4a4e662d566a776c53366c564b586e3357796f4c486f44516b3354465f7a75346f3d",
+        "orig_ext": ".pdf"
+    },
+    "lms open step for students.chacha20": {
+        "algorithm": "Hex-ChaCha20",
+        "key": "9033bd4f40db25fe367ce9ea6d434db4113be72ebb7e88f11fb7af337caa5901",
+        "orig_ext": ".docx"
+    },
+    "abhinavnegi_2321032_operatingsystem_4.chacha20": {
+        "algorithm": "Hex-ChaCha20",
+        "key": "9033bd4f40db25fe367ce9ea6d434db4113be72ebb7e88f11fb7af337caa5901",
+        "orig_ext": ".pdf"
+    },
+    "abhip1 (1).chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": "e74b2aa80be7d16ef0bbab08cfeed58be4ec98696718a7159eaa426d0bbf5cd0",
+        "salt": "cdb90adebcd8acf76dd7f5df68ca08df",
+        "orig_ext": ".pdf"
+    },
+    "lms open step for students.blowfish": {
+        "algorithm": "pbkdf2-Blowfish",
+        "key": "18c4d12a88c06c436875e207d121de14",
+        "salt": "19cf2f7022a7e36e29b8cfff1b14f981",
+        "orig_ext": ".docx"
+    },
+    "Abhinet.blowfish": {
+        "algorithm": "Hex-Blowfish",
+        "key": "aa6a491b1808a394a18dafba0c833f2d",
+        "orig_ext": ".pdf"
+    },
+    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).blowfish": {
+        "algorithm": "pbkdf2-Blowfish",
+        "key": "02ec87f3e6916322b6951644ad824341bc760f4a7561f2f7e857c5dc45f03f27",
+        "salt": "a1a7054b12a75aacd79084934706ff31",
+        "orig_ext": ".xls"
+    },
+    "updated rescheduled seating plan 01-04-2025 (2).blowfish": {
+        "algorithm": "pbkdf2-Blowfish",
+        "key": "c1ac2facc44066446b2213729866044fe3bb9aa8d06601c79c8bc070b441c569",
+        "salt": "b3540b21b3ccb21451c593ae06a6f9eb",
+        "orig_ext": ".xlsx"
+    },
+    "Abhinet.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": "da08ab3e02a6dee4efca1fa8119c1a7be35e3e2bce4697a005b1035fcbc103a5",
+        "salt": "92b35242bcab9f3a2af0070365bc93a5",
+        "orig_ext": ".pdf"
+    },
+    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).chacha20": {
+        "algorithm": "Hex-ChaCha20",
+        "key": "31b639a6deaf39598b9e2c82c13b21b15222d38f690db0bfe1ff7f3c7f61ebb3",
+        "orig_ext": ".xls"
+    },
+    "updated rescheduled seating plan 01-04-2025.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": "fa97c3b5ffffbefaccc2346dc790f4026d2b96adfa82887e2ee450b2b7cd455a",
+        "salt": "8ef69502a58d3ad5cac1e73657f5a939",
+        "orig_ext": ".xlsx"
+    },
+    "invoice_202412001_report_a.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": "093e6c255fe7a3dfb9b00b38ac9e02f6c3ae4a4b66317094d2e9dd93c695df4d",
+        "salt": "bf3148963233bfc0fe7513d12a1ec200",
+        "orig_ext": ".pdf"
+    },
+    "abhip.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": "589b6e82a53025465aad2eaeb634d6a693516e90c73145ee3a88e878a7643e0d",
+        "salt": "67e42f72f63a9635970c6d2f6db069b4",
+        "orig_ext": ".pdf"
+    },
+    "pbl project info-1.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": "56386ba1574d77b194410fc7f8f91694fc6917531186d36f2583a514aff3151d",
+        "salt": "c5e7b93a132ad6053fb1c80f4c503c8e",
+        "orig_ext": ".pdf"
+    },
+    "abhip1.chacha20": {
+        "algorithm": "Hex-ChaCha20",
+        "key": "22116e3dec53e8d07206b2438a96743f752ce0540c45a7b88628322bddd7e1fe",
+        "orig_ext": ".pdf"
+    },
+    "abhip (1).chacha20": {
+        "algorithm": "Hex-ChaCha20",
+        "key": "22116e3dec53e8d07206b2438a96743f752ce0540c45a7b88628322bddd7e1fe",
+        "orig_ext": ".docx"
+    },
+    "lms open step for students.des": {
+        "algorithm": "pbkdf2-DES",
+        "key": "ca11f2d1a3470cd0",
+        "salt": "cdaf7d427a0e36318ddc8c5953f4300e",
+        "orig_ext": ".docx"
+    },
+    "abhinavnegi_2321032_operatingsystem_4.des": {
+        "algorithm": "pbkdf2-DES",
+        "key": "e0f273439670ca38",
+        "salt": "24fbcc2b675df12c03c6a560c435d685",
+        "orig_ext": ".pdf"
+    },
+    "abhip1 (1).des": {
+        "algorithm": "Hex-DES",
+        "key": "0f3dd0d2b972e1d6",
+        "orig_ext": ".pdf"
+    },
+    "Abhinet.des": {
+        "algorithm": "Hex-DES",
+        "key": "fcb78497cc8ddf9f",
+        "orig_ext": ".pdf"
+    },
+    "abhinavnegi_2321032_operatingsystem_4.blowfish": {
+        "algorithm": "pbkdf2-Blowfish",
+        "key": "2cc027d7c12bf04e1a73d6f47c5f46e8",
+        "salt": "2c45917ce518520b352dd26bd7e9dae2",
+        "orig_ext": ".pdf"
+    },
+    "abhip1.blowfish": {
+        "algorithm": "scrypt-Blowfish",
+        "key": "a12d70cba60faed39a2b27d2daa5a4c7",
+        "salt": "de4a248765cf89257f8d588c4d4c9e91",
+        "orig_ext": ".pdf"
+    },
+    "abhip1.des": {
+        "algorithm": "Hex-DES",
+        "key": "fcb78497cc8ddf9f",
+        "orig_ext": ".pdf"
+    },
+    "abhip (1).blowfish": {
+        "algorithm": "Hex-Blowfish",
+        "key": "aa6a491b1808a394a18dafba0c833f2d",
+        "orig_ext": ".docx"
+    },
+    "lms open step for students.xor": {
+        "algorithm": "pbkdf2-XOR",
+        "key": "30f362292c6678f2601c8feab9ba32da",
+        "salt": "b966c84090a998cc9ac51a2657d54c87",
+        "orig_ext": ".docx"
+    },
+    "abhinavnegi_2321032_operatingsystem_4.xor": {
+        "algorithm": "pbkdf2-XOR",
+        "key": "e5d91507fe7a7c31f37254bd68c9f2ac",
+        "salt": "35ff0e593513c7d33eaab9e2f7d588c6",
+        "orig_ext": ".pdf"
+    },
+    "abhip1 (1).xor": {
+        "algorithm": "scrypt-XOR",
+        "key": "0ab8bc9021847d51ba68a67bec31736a",
+        "salt": "3203f590311eb43f42c293b1b7186b86",
+        "orig_ext": ".pdf"
+    },
+    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).xor": {
+        "algorithm": "scrypt-XOR",
+        "key": "dec1b150e137355927a448154efb87d9",
+        "salt": "b2f4ee8ee41780460ebdb5e7154eb389",
+        "orig_ext": ".xls"
+    },
+    "updated rescheduled seating plan 01-04-2025 (2).xor": {
+        "algorithm": "scrypt-XOR",
+        "key": "4ebfdaa9244a58e6740ee9bd3b1991b6",
+        "salt": "7d27c5390a9620b5ada95100588e5b0d",
+        "orig_ext": ".xlsx"
+    },
+    "Abhinet.xor": {
+        "algorithm": "scrypt-XOR",
+        "key": "55692bb53c3dafcc53659df3f1f130b3",
+        "salt": "6649897f5434c762d86cac7fbb7b70fe",
+        "orig_ext": ".pdf"
+    },
+    "abhip.xor": {
+        "algorithm": "pbkdf2-XOR",
+        "key": "a778cc1f1b30990288f0d03c9b81db85",
+        "salt": "f9c36c79f78e93f0f1aea7212e0799a9",
+        "orig_ext": ".pdf"
+    },
+    "pbl project info-1 (1).xor": {
+        "algorithm": "pbkdf2-XOR",
+        "key": "0d33379c002b74ac007b59c45c35eb5d",
+        "salt": "c0268e8c7abadeaecbc510ce15a5e0e9",
         "orig_ext": ".pdf"
     }
 }
