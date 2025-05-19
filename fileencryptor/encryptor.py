@@ -1,4 +1,3 @@
-#start from here
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from tkinter import Entry, Button, Label
@@ -15,7 +14,6 @@ import platform
 
 KEY_STORE_FILE = "encryption_keys.json"
 
-# Encryption Algorithms Implementations
 
 def _aes_encrypt(data,key=None):
     if key is None:
@@ -34,8 +32,7 @@ def _fernet_encrypt(data, key=None):
         key = Fernet.generate_key()
     elif isinstance(key, bytes):
         try:
-            # Validate that it's base64-safe and correct length
-            Fernet(key)  # This will raise an error if it's invalid
+            Fernet(key) 
         except Exception:
             raise ValueError("❌ Invalid Fernet key format. Must be 32-byte base64-encoded.")
     fernet = Fernet(key)
@@ -50,12 +47,12 @@ def _chacha20_encrypt(data, key=None):
     if key is None:
         key = get_random_bytes(32)
     cipher = ChaCha20.new(key=key)
-    nonce = cipher.nonce  # 12-byte nonce
+    nonce = cipher.nonce 
     ciphertext = cipher.encrypt(data)
     return key ,nonce + ciphertext
 
 def _chacha20_decrypt(encrypted_data: bytes, key: bytes) -> bytes:
-    nonce = encrypted_data[:8]         # ← 8, not 12
+    nonce = encrypted_data[:8]        
     ciphertext = encrypted_data[8:]
     cipher = ChaCha20.new(key=key, nonce=nonce)
     return cipher.decrypt(ciphertext)
@@ -133,26 +130,24 @@ def save_key_to_store(file_path, algorithm, key, salt=None, extra_data=None):
     if salt:
         store[base_name]["salt"] = salt
     if extra_data:
-        store[base_name].update(extra_data)  # Merge extra data like original extension
+        store[base_name].update(extra_data)  
     with open(KEY_STORE_FILE, 'w') as f:
         json.dump(store, f, indent=4)
 
 def open_file(path):
     ext = os.path.splitext(path)[1].lower()
 
-    # Mapping common file extensions to appropriate apps
     app_map = {
-        '.docx': 'libreoffice',     # Use LibreOffice for Word documents
+        '.docx': 'libreoffice',    
         '.doc': 'libreoffice',
         '.xlsx': 'libreoffice',
         '.xls': 'libreoffice',
         '.pptx': 'libreoffice',
         '.ppt': 'libreoffice',
-        '.pdf': 'sumatrapdf',       # Use SumatraPDF or other PDF reader
-        '.txt': 'notepad',          # Notepad for text files
+        '.pdf': 'sumatrapdf',     
+        '.txt': 'notepad',          
     }
 
-    # Detect OS
     system = platform.system()
 
     if ext in app_map:
@@ -162,13 +157,12 @@ def open_file(path):
                 subprocess.Popen([app, path], shell=True)
             elif system == "Darwin":
                 subprocess.call([app, path])
-            else:  # Linux
+            else:  
                 subprocess.call([app, path])
             return
         except Exception as e:
             print(f"⚠️ Could not open with {app}: {e}")
 
-    # Fallback to default app
     try:
         if system == "Windows":
             os.startfile(path)
@@ -224,11 +218,9 @@ class FileEncryptorApp:
         self.status_text.pack(pady=10)
 
 
-        # Generate Key Button
         self.generate_key_button = tk.Button(self.root, text="Generate 256-bit Hex Key", command=self.generate_custom_key)
         self.generate_key_button.pack(pady=5)
 
-        # Label for instructions
         tk.Label(self.root, text="(Paste or use generated key for custom hex encryption)").pack(pady=5)
 
 
@@ -237,10 +229,9 @@ class FileEncryptorApp:
         return simpledialog.askstring("Password Required", f"Enter password to decrypt '{filename}':", show="*")
             
     def start_decryption(self):
-        self.select_encrypted_files()  # Show the file dialog for encrypted files
-        if self.selected_files:  # Only proceed if files were selected
-            self.decrypt_files()  # Call the decryption method
-
+        self.select_encrypted_files()  
+        if self.selected_files:  
+            self.decrypt_files()  
     def select_files(self):
         files = filedialog.askopenfilenames(title="Select files")
         if files:
@@ -248,7 +239,6 @@ class FileEncryptorApp:
             self.log(f"Selected {len(files)} file(s).")
     
     def select_encrypted_files(self):
-        # Create a tuple of allowed extensions based on ALGORITHMS keys
         extensions = [f"*.{algo.lower()}" for algo in ALGORITHMS]
         filetypes = [("Encrypted files", " ".join(extensions))]
         
@@ -259,7 +249,7 @@ class FileEncryptorApp:
     def prompt_password(self, filename, purpose="Decryption"):
         return simpledialog.askstring(f"{purpose} Password", f"Enter password for {purpose.lower()} of {filename}:", show='*')
     def generate_custom_key(self):
-        hex_key = os.urandom(32).hex()  # 32 bytes = 256-bit key
+        hex_key = os.urandom(32).hex()  
         self.custom_key_entry.delete(0, 'end')
         self.custom_key_entry.insert(0, hex_key)
         self.log("✅ Generated 256-bit custom hex key.")
@@ -278,13 +268,11 @@ class FileEncryptorApp:
                 with open(file, 'rb') as f:
                     data = f.read()
 
-                # Prompt for password for each file if password encryption is selected
                 salt = None
                 if key_type.startswith('password'):
                     if algo == 'Fernet':
                         self.log(f"❌ Fernet does not support password-based encryption. Skipping {os.path.basename(file)}.")
                         continue
-                    # Prompt for password per file
                     method = 'pbkdf2' if 'pbkdf2' in key_type.lower() else 'scrypt'
                     password = self.prompt_password(os.path.basename(file), purpose="Encryption")
                     if not password:
@@ -298,7 +286,7 @@ class FileEncryptorApp:
                         else:
                             key_len = 16
                         key, salt = derive_key_from_password(password, method=method, key_len=key_len)
-                        key = key[:key_len]  # Explicitly enforce length
+                        key = key[:key_len]  
 
                     except Exception as e:
                         self.log(f"❌ Key derivation failed for {file}: {e}")
@@ -312,11 +300,9 @@ class FileEncryptorApp:
                     expected_key_len = {
                         'ChaCha20': 32,
                         'DES': 8,
-                    }.get(algo, 16)  # Default to 16 for AES or others
-
+                    }.get(algo, 16) 
                     hex_key_input = self.custom_key_entry.get().strip()
 
-                    # Auto-generate key only if entry is empty
                     if not hex_key_input:
                         key = get_random_bytes(expected_key_len)
                         hex_key_input = key.hex()
@@ -327,7 +313,6 @@ class FileEncryptorApp:
                     try:
                         key = bytes.fromhex(hex_key_input)
 
-                        # ✅ Enforce correct key length
                         if len(key) != expected_key_len:
                             self.log(f"❌ {algo} requires a {expected_key_len}-byte key. Provided key is {len(key)} bytes.")
                             continue
@@ -344,8 +329,7 @@ class FileEncryptorApp:
                         key = Fernet.generate_key()
                         self.log(f"✅ Auto-generated Fernet key for {os.path.basename(file)}.")
                     else:
-                        key = None  # Other algorithms will generate their own keys internally
-
+                        key = None  
 
                 else:
                     self.log("❌ Unknown key option.")
@@ -353,7 +337,6 @@ class FileEncryptorApp:
                 
                 file_root, file_ext = os.path.splitext(file)
                 out_path = f"{file_root}.{algo.lower()}"
-                # Encrypt the data
                 if key is not None:
                     result = ALGORITHMS[algo]['encrypt'](data, key)
                     key = result[0] if isinstance(result, tuple) else key
@@ -364,7 +347,6 @@ class FileEncryptorApp:
                 with open(out_path, 'wb') as f:
                     f.write(encrypted_data)
 
-                # Save key info
                 orig_ext = os.path.splitext(file)[1]
                 
                 if key_type.startswith('password'):
@@ -403,11 +385,9 @@ class FileEncryptorApp:
 
                 algorithm = key_info['algorithm']
 
-                # Check if password-based key
-                key = None  # Ensure key is always declared
+                key = None  
                 salt = None
 
-                # Password-based key
                 if 'salt' in key_info:
                     salt = bytes.fromhex(key_info['salt'])
                     password = self.prompt_password(base_name)
@@ -418,7 +398,6 @@ class FileEncryptorApp:
                     method = 'pbkdf2' if 'pbkdf2' in algorithm.lower() else 'scrypt'
                     base_algo = algorithm.split('-')[-1].lower()
 
-                    # ✅ Adjust key length based on algorithm
                     if base_algo == 'chacha20':
                         key_len = 32
                     elif base_algo == 'des':
@@ -434,7 +413,6 @@ class FileEncryptorApp:
                         continue
 
 
-                # Custom hex key
                 elif 'hex' in algorithm.lower():
                     try:
                         key = bytes.fromhex(key_info['key'])
@@ -442,7 +420,6 @@ class FileEncryptorApp:
                         self.log(f"❌ Invalid hex key format stored for {base_name}")
                         continue
 
-                # Other keys (e.g., Fernet or random-generated)
                 else:
                     key = key_info['key'] if 'fernet' in algorithm.lower() else bytes.fromhex(key_info['key'])
 
@@ -450,15 +427,14 @@ class FileEncryptorApp:
                     data = f.read()
                 base_algo = algorithm.split('-')[-1] 
                 decrypted_data = ALGORITHMS[base_algo]['decrypt'](data, key)
-                #orig_extension = os.path.splitext(file.replace(f".{algorithm.lower()}", ''))[1]
                 encrypted_ext = os.path.splitext(file)[1]
                 if file.endswith(encrypted_ext):
-                    decrypted_path  = file[:-len(encrypted_ext)]  # Remove the .aes or .fernet extension
+                    decrypted_path  = file[:-len(encrypted_ext)]  
                 else:
                     decrypted_path  = file
 
                 orig_ext = key_info.get("orig_ext", "")
-                file_base = os.path.splitext(file)[0]  # strip .aes
+                file_base = os.path.splitext(file)[0]  
                 out_path = f"{file_base}_decrypted{orig_ext}"
 
 
