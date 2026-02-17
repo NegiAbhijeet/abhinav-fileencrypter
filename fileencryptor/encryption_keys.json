@@ -1,8 +1,7 @@
 {
     "computer network (1).docx": {
-        "algorithm": "pbkdf2-AES",
-        "key": "a24587f57370d400c21725e5151794d9",
-        "salt": "7e097f12109024ae3746f35abeeeacf6"
+        "algorithm": "AES",
+        "key": "0c85e95333c634f488c340a63dbf1ecd"
     },
     "abhinavds1.docx": {
         "algorithm": "AES",
@@ -21,9 +20,8 @@
         "key": "e795f6e23ac17899482bc0cb7017e7fe"
     },
     "abhip1.pdf": {
-        "algorithm": "pbkdf2-AES",
-        "key": "ab28ca61619af13d065494ce5b855c34",
-        "salt": "290cfca53c558ede304d0167fb6c556a"
+        "algorithm": "Fernet",
+        "key": "590N9kvtRiTmWfAIW3LrUlpIy87UDF8v-ncYnWvbqfE="
     },
     "New Microsoft Word Document (1).docx": {
         "algorithm": "Blowfish",
@@ -34,286 +32,461 @@
         "key": "5002fe13703d2eaf77c9f317d30dd919"
     },
     "lms open step for students.docx": {
-        "algorithm": "pbkdf2-AES",
-        "key": "04c2c8fc89cac8e22dee78058ff687a5",
-        "salt": "0070517aaedac7e54abf7d97f55bd278"
+        "algorithm": "DES",
+        "key": "32d6ef4b7d6fa509"
     },
     "abhinavnegi_2321032_operatingsystem_4.pdf": {
-        "algorithm": "pbkdf2-AES",
-        "key": "3f3028c7cacfc8c1c7a0b7977c4131a6",
-        "salt": "fbe069fe1467b0ec700522040873e98e"
+        "algorithm": "DES",
+        "key": "7b14defabb16d36a"
     },
     "abhip1 (1).pdf": {
-        "algorithm": "pbkdf2-AES",
-        "key": "7719cefe0582803abaf13721d0d92ff9",
-        "salt": "0691f44b4f3323d5ad48f202f58ac4eb"
+        "algorithm": "DES",
+        "key": "6507e970b0a544b8"
     },
     "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).xls": {
-        "algorithm": "pbkdf2-AES",
-        "key": "7d9acdf1fcf15321decab439457047a3",
-        "salt": "8c007feab722cc27c38772e44ace3041"
+        "algorithm": "ChaCha20",
+        "key": "989a674874c6b834fb7dab5ece0702d52800466e51cbaaddb2410a60e9c3db023c2badb80f7d8838"
     },
     "updated rescheduled seating plan 01-04-2025 (2).xlsx": {
-        "algorithm": "pbkdf2-AES",
-        "key": "09dcaddf346876d12316aabdbfaa78a7",
-        "salt": "ad7761b0e045e24436365ac8caa0d1d0"
+        "algorithm": "Blowfish",
+        "key": "fe20a4b593a3509fd9c511dc76c43400"
     },
     "duplicate entries.xlsx": {
-        "algorithm": "pbkdf2-AES",
-        "key": "3b4f58f60fc1af2e315d82557bbe5a9e",
-        "salt": "6adc17aa8d4be4832be5d68d2b7af388"
+        "algorithm": "ChaCha20",
+        "key": "011c0b0a67dfecf837e9b473ec8e4d352b957b4c58105dd289ab0a169325e9a0a09608b0ef3cc944"
     },
     "Abhinet.pdf": {
-        "algorithm": "pbkdf2-AES",
-        "key": "8e1cfdcd7206d303e406ea4c7e4f0c15",
-        "salt": "554e306ca04d40e9446bc87110a369b0"
+        "algorithm": "Fernet",
+        "key": "xsXqt-bfl94IbxOR4_XGcDX4ITo5w9128blAUhKJQPg="
     },
     "abhipn .docx": {
         "algorithm": "AES",
         "key": "3cc86052b095ce232f5afae9dae286c5"
     },
     "abhip.pdf": {
-        "algorithm": "pbkdf2-AES",
-        "key": "02a42dc8b691723a74c10017286cbffa",
-        "salt": "28e8c5628f902c64be4070a337fe1e41"
+        "algorithm": "AES",
+        "key": "bd15a91eda27f27f5e47a19fd5ed26014ce75e61c7a0a7eaa1b54d9d7ba8231f"
     },
     "abhip (1).docx": {
-        "algorithm": "pbkdf2-AES",
-        "key": "aa4df5c2af4c4b0c310e0f078e8dd870",
-        "salt": "470f604c543952f97a1a1a0e233cba23"
-    },
-    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).xls.aes": {
-        "algorithm": "pbkdf2-AES",
-        "key": "50b9aa8f6df8dcd2bce7acab00a0482d",
-        "salt": "e9a127dde249ee4fa7c5dbd6028207bc"
-    },
-    "lms open step for students.aes": {
-        "algorithm": "Hex-AES",
-        "key": "037b3fb836b3b477784a9db948f307b0",
-        "orig_ext": ".docx"
-    },
-    "abhinavnegi_2321032_operatingsystem_4.aes": {
-        "algorithm": "Hex-AES",
-        "key": "037b3fb836b3b477784a9db948f307b0",
-        "orig_ext": ".pdf"
-    },
-    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).aes": {
-        "algorithm": "Hex-AES",
-        "key": "b847c77c18c34fdc1773bc2eb10fb8644a37130d5018d40ed33bb34796b1e1f0",
-        "orig_ext": ".xls"
-    },
-    "updated rescheduled seating plan 01-04-2025 (2).aes": {
-        "algorithm": "pbkdf2-AES",
-        "key": "ae1e29a6b156fefe1935ba739957b9e0",
-        "salt": "76578b621dc0cd9fe51a4d9279218f3e",
-        "orig_ext": ".xlsx"
-    },
-    "abhip1 (1).aes": {
-        "algorithm": "Hex-AES",
-        "key": "22116e3dec53e8d07206b2438a96743f752ce0540c45a7b88628322bddd7e1fe",
-        "orig_ext": ".pdf"
-    },
-    "abhip (1).aes": {
-        "algorithm": "scrypt-AES",
-        "key": "ead4db9a8e6a654dbc97cc7bb42991a8",
-        "salt": "dd9130ccbf4527ecbb2472315e7f694f",
-        "orig_ext": ".docx"
-    },
-    "Abhinet.aes": {
-        "algorithm": "Hex-AES",
-        "key": "b847c77c18c34fdc1773bc2eb10fb8644a37130d5018d40ed33bb34796b1e1f0",
-        "orig_ext": ".pdf"
-    },
-    "abhip1.aes": {
-        "algorithm": "pbkdf2-AES",
-        "key": "2080c4c8de636522d6b3adce63bed91a",
-        "salt": "7bc444242ebb612abf4e0bfee00a4dec",
-        "orig_ext": ".pdf"
-    },
-    "lms open step for students.fernet": {
         "algorithm": "Fernet",
-        "key": "457a733644504a734f75776c656e4f4d52694f6138584b69734978616b68454c54454a6463304c70766b343d",
+        "key": "aP0Bo8C4BfEPictPtKrvFKSn4Ki7DmP8cFjQKDlZqWE="
+    },
+    "3rd phase Project Progress Temp-GEHU.des": {
+        "algorithm": "pbkdf2-DES",
+        "key": "77c1c98e190c72ae",
+        "salt": "887bd26486ce76a7508ab861ef984491",
         "orig_ext": ".docx"
     },
-    "abhinavnegi_2321032_operatingsystem_4.fernet": {
-        "algorithm": "Fernet",
-        "key": "33756f4431386379705f4a4e662d566a776c53366c564b586e3357796f4c486f44516b3354465f7a75346f3d",
-        "orig_ext": ".pdf"
-    },
-    "lms open step for students.chacha20": {
-        "algorithm": "Hex-ChaCha20",
-        "key": "9033bd4f40db25fe367ce9ea6d434db4113be72ebb7e88f11fb7af337caa5901",
-        "orig_ext": ".docx"
-    },
-    "abhinavnegi_2321032_operatingsystem_4.chacha20": {
-        "algorithm": "Hex-ChaCha20",
-        "key": "9033bd4f40db25fe367ce9ea6d434db4113be72ebb7e88f11fb7af337caa5901",
-        "orig_ext": ".pdf"
-    },
-    "abhip1 (1).chacha20": {
+    "3rd phase Project Progress Temp-GEHU.chacha20": {
         "algorithm": "pbkdf2-ChaCha20",
-        "key": "e74b2aa80be7d16ef0bbab08cfeed58be4ec98696718a7159eaa426d0bbf5cd0",
-        "salt": "cdb90adebcd8acf76dd7f5df68ca08df",
-        "orig_ext": ".pdf"
-    },
-    "lms open step for students.blowfish": {
-        "algorithm": "pbkdf2-Blowfish",
-        "key": "18c4d12a88c06c436875e207d121de14",
-        "salt": "19cf2f7022a7e36e29b8cfff1b14f981",
+        "key": "cf53e918dd51337f9ad458a5f92e4bab605e17cd8910edc60d37d26c54f4ba71",
+        "salt": "9b770c534ddcd9c7ed2122cea16f041c",
         "orig_ext": ".docx"
     },
-    "Abhinet.blowfish": {
-        "algorithm": "Hex-Blowfish",
-        "key": "aa6a491b1808a394a18dafba0c833f2d",
+    "3rd phase Project Progress Temp-GEHU.blowfish": {
+        "algorithm": "pbkdf2-Blowfish",
+        "key": "ceef8bb0dad355106048c1121a701fc4",
+        "salt": "c0748422018e2ebdb47e87ad32b03f7d",
+        "orig_ext": ".docx"
+    },
+    "1. Number System 2.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": null,
+        "salt": "3377ba7e4d088146d1362ffe203b07c6",
+        "orig_ext": ".docx"
+    },
+    "Number System Solution Type 1, 2, 3.aes": {
+        "algorithm": "AES",
+        "key": "1877861485d02e3fb1488a3a0cc41151",
+        "orig_ext": ".pptx"
+    },
+    "1. Number System 1.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": null,
+        "salt": "c188d12836e57cff58cf1c0a06739f2e",
+        "orig_ext": ".docx"
+    },
+    "2. Percentage.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "672e0229d0b29ca2ce24e279d922e39c",
+        "salt": "0be058110b8c45674aaff7f9449b8c8c",
+        "orig_ext": ".docx"
+    },
+    "TBC_403_Assignment03.aes": {
+        "algorithm": "AES",
+        "key": "3366467a47586a560000000000000000",
         "orig_ext": ".pdf"
     },
-    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).blowfish": {
-        "algorithm": "pbkdf2-Blowfish",
-        "key": "02ec87f3e6916322b6951644ad824341bc760f4a7561f2f7e857c5dc45f03f27",
-        "salt": "a1a7054b12a75aacd79084934706ff31",
-        "orig_ext": ".xls"
-    },
-    "updated rescheduled seating plan 01-04-2025 (2).blowfish": {
-        "algorithm": "pbkdf2-Blowfish",
-        "key": "c1ac2facc44066446b2213729866044fe3bb9aa8d06601c79c8bc070b441c569",
-        "salt": "b3540b21b3ccb21451c593ae06a6f9eb",
+    "Seating Plan for Career Skills - BCA , BCA (AI - DS) and B.Sc (IT) 4th Sem (1).aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": "6642de43ec14b6d8fe5c35ee1c29a4dc",
+        "salt": "3b5df91ff5121264f40e302492b92b81",
         "orig_ext": ".xlsx"
     },
-    "Abhinet.chacha20": {
-        "algorithm": "pbkdf2-ChaCha20",
-        "key": "da08ab3e02a6dee4efca1fa8119c1a7be35e3e2bce4697a005b1035fcbc103a5",
-        "salt": "92b35242bcab9f3a2af0070365bc93a5",
-        "orig_ext": ".pdf"
-    },
-    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).chacha20": {
-        "algorithm": "Hex-ChaCha20",
-        "key": "31b639a6deaf39598b9e2c82c13b21b15222d38f690db0bfe1ff7f3c7f61ebb3",
-        "orig_ext": ".xls"
-    },
-    "updated rescheduled seating plan 01-04-2025.chacha20": {
-        "algorithm": "pbkdf2-ChaCha20",
-        "key": "fa97c3b5ffffbefaccc2346dc790f4026d2b96adfa82887e2ee450b2b7cd455a",
-        "salt": "8ef69502a58d3ad5cac1e73657f5a939",
-        "orig_ext": ".xlsx"
-    },
-    "invoice_202412001_report_a.chacha20": {
-        "algorithm": "pbkdf2-ChaCha20",
-        "key": "093e6c255fe7a3dfb9b00b38ac9e02f6c3ae4a4b66317094d2e9dd93c695df4d",
-        "salt": "bf3148963233bfc0fe7513d12a1ec200",
-        "orig_ext": ".pdf"
-    },
-    "abhip.chacha20": {
-        "algorithm": "pbkdf2-ChaCha20",
-        "key": "589b6e82a53025465aad2eaeb634d6a693516e90c73145ee3a88e878a7643e0d",
-        "salt": "67e42f72f63a9635970c6d2f6db069b4",
-        "orig_ext": ".pdf"
-    },
-    "pbl project info-1.chacha20": {
-        "algorithm": "pbkdf2-ChaCha20",
-        "key": "56386ba1574d77b194410fc7f8f91694fc6917531186d36f2583a514aff3151d",
-        "salt": "c5e7b93a132ad6053fb1c80f4c503c8e",
-        "orig_ext": ".pdf"
-    },
-    "abhip1.chacha20": {
-        "algorithm": "Hex-ChaCha20",
-        "key": "22116e3dec53e8d07206b2438a96743f752ce0540c45a7b88628322bddd7e1fe",
-        "orig_ext": ".pdf"
-    },
-    "abhip (1).chacha20": {
-        "algorithm": "Hex-ChaCha20",
-        "key": "22116e3dec53e8d07206b2438a96743f752ce0540c45a7b88628322bddd7e1fe",
+    "1. Number System 2.fernet": {
+        "algorithm": "pbkdf2-Fernet",
+        "key": null,
+        "salt": "f5f24dc3eaa43712c73700079a7cfd49",
         "orig_ext": ".docx"
     },
-    "lms open step for students.des": {
-        "algorithm": "pbkdf2-DES",
-        "key": "ca11f2d1a3470cd0",
-        "salt": "cdaf7d427a0e36318ddc8c5953f4300e",
+    "1. Number System 1.fernet": {
+        "algorithm": "pbkdf2-Fernet",
+        "key": null,
+        "salt": "1dc607005971c934529d0612fc939662",
         "orig_ext": ".docx"
     },
-    "abhinavnegi_2321032_operatingsystem_4.des": {
+    "3. Profit Loss Discount.fernet": {
+        "algorithm": "pbkdf2-Fernet",
+        "key": null,
+        "salt": "f13b897f73b4f8db6a8db2b866fef65a",
+        "orig_ext": ".docx"
+    },
+    "2. Percentage.fernet": {
+        "algorithm": "pbkdf2-Fernet",
+        "key": null,
+        "salt": "c5d7b42cdac0ce6d7c0238cbaf0db3dc",
+        "orig_ext": ".docx"
+    },
+    "1. Number System 2.des": {
         "algorithm": "pbkdf2-DES",
-        "key": "e0f273439670ca38",
-        "salt": "24fbcc2b675df12c03c6a560c435d685",
-        "orig_ext": ".pdf"
+        "key": null,
+        "salt": "b3e033574246a713552abdf2c4b48a0a",
+        "orig_ext": ".docx"
     },
-    "abhip1 (1).des": {
-        "algorithm": "Hex-DES",
-        "key": "0f3dd0d2b972e1d6",
-        "orig_ext": ".pdf"
+    "1. Number System 1.des": {
+        "algorithm": "pbkdf2-DES",
+        "key": null,
+        "salt": "e89d63a73b9f584b650cdf043c65f0c2",
+        "orig_ext": ".docx"
     },
-    "Abhinet.des": {
-        "algorithm": "Hex-DES",
-        "key": "fcb78497cc8ddf9f",
-        "orig_ext": ".pdf"
+    "1. Number System 2.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "d704b5566d2761e2eb1d897e195504dd",
+        "orig_ext": ".docx"
     },
-    "abhinavnegi_2321032_operatingsystem_4.blowfish": {
+    "1. Number System 1.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "20671bbbe9078a3c09a40df011f8fc55",
+        "orig_ext": ".docx"
+    },
+    "1. Number System 2.blowfish": {
         "algorithm": "pbkdf2-Blowfish",
-        "key": "2cc027d7c12bf04e1a73d6f47c5f46e8",
-        "salt": "2c45917ce518520b352dd26bd7e9dae2",
-        "orig_ext": ".pdf"
+        "key": null,
+        "salt": "6b3e4965039325e5c044e79f44fabcbf",
+        "orig_ext": ".docx"
     },
-    "abhip1.blowfish": {
+    "1. Number System 1.blowfish": {
+        "algorithm": "pbkdf2-Blowfish",
+        "key": null,
+        "salt": "a48466a29a6c6c98a89d02164e0c86bd",
+        "orig_ext": ".docx"
+    },
+    "3. Profit Loss Discount.blowfish": {
         "algorithm": "scrypt-Blowfish",
-        "key": "a12d70cba60faed39a2b27d2daa5a4c7",
-        "salt": "de4a248765cf89257f8d588c4d4c9e91",
-        "orig_ext": ".pdf"
-    },
-    "abhip1.des": {
-        "algorithm": "Hex-DES",
-        "key": "fcb78497cc8ddf9f",
-        "orig_ext": ".pdf"
-    },
-    "abhip (1).blowfish": {
-        "algorithm": "Hex-Blowfish",
-        "key": "aa6a491b1808a394a18dafba0c833f2d",
+        "key": null,
+        "salt": "f31f2d0ed692a95591e0d85c6ab85608",
         "orig_ext": ".docx"
     },
-    "lms open step for students.xor": {
-        "algorithm": "pbkdf2-XOR",
-        "key": "30f362292c6678f2601c8feab9ba32da",
-        "salt": "b966c84090a998cc9ac51a2657d54c87",
+    "2. Percentage.blowfish": {
+        "algorithm": "scrypt-Blowfish",
+        "key": null,
+        "salt": "f563234e36834a72468cc35c894140ae",
         "orig_ext": ".docx"
     },
-    "abhinavnegi_2321032_operatingsystem_4.xor": {
+    "3. Profit Loss Discount.des": {
+        "algorithm": "scrypt-DES",
+        "key": null,
+        "salt": "f891dd2f033aebd7ec87e4476de6b7b8",
+        "orig_ext": ".docx"
+    },
+    "2. Percentage.des": {
+        "algorithm": "scrypt-DES",
+        "key": null,
+        "salt": "ffa41f42aa9da19efdb776de624afe50",
+        "orig_ext": ".docx"
+    },
+    "3. Profit Loss Discount.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "e5f73d9ec55577e054592f0efc720214",
+        "orig_ext": ".docx"
+    },
+    "2. Percentage.chacha20": {
+        "algorithm": "scrypt-ChaCha20",
+        "key": null,
+        "salt": "e50e6a35d18848aaf55609c1110fed31",
+        "orig_ext": ".docx"
+    },
+    "1. Number System 2.xor": {
         "algorithm": "pbkdf2-XOR",
-        "key": "e5d91507fe7a7c31f37254bd68c9f2ac",
-        "salt": "35ff0e593513c7d33eaab9e2f7d588c6",
-        "orig_ext": ".pdf"
+        "key": null,
+        "salt": "f618c06decad1ef34926699342e4c9c2",
+        "orig_ext": ".docx"
     },
-    "abhip1 (1).xor": {
-        "algorithm": "scrypt-XOR",
-        "key": "0ab8bc9021847d51ba68a67bec31736a",
-        "salt": "3203f590311eb43f42c293b1b7186b86",
-        "orig_ext": ".pdf"
-    },
-    "BCA(GEN)4th Semester(OPERATING SYSTEM (SOFTWARE ENGINEERING)) (1).xor": {
-        "algorithm": "scrypt-XOR",
-        "key": "dec1b150e137355927a448154efb87d9",
-        "salt": "b2f4ee8ee41780460ebdb5e7154eb389",
-        "orig_ext": ".xls"
-    },
-    "updated rescheduled seating plan 01-04-2025 (2).xor": {
-        "algorithm": "scrypt-XOR",
-        "key": "4ebfdaa9244a58e6740ee9bd3b1991b6",
-        "salt": "7d27c5390a9620b5ada95100588e5b0d",
-        "orig_ext": ".xlsx"
-    },
-    "Abhinet.xor": {
-        "algorithm": "scrypt-XOR",
-        "key": "55692bb53c3dafcc53659df3f1f130b3",
-        "salt": "6649897f5434c762d86cac7fbb7b70fe",
-        "orig_ext": ".pdf"
-    },
-    "abhip.xor": {
+    "1. Number System 1.xor": {
         "algorithm": "pbkdf2-XOR",
-        "key": "a778cc1f1b30990288f0d03c9b81db85",
-        "salt": "f9c36c79f78e93f0f1aea7212e0799a9",
+        "key": null,
+        "salt": "dfbbd493869c0f4eb6adbf4f7011dea6",
+        "orig_ext": ".docx"
+    },
+    "3. Profit Loss Discount.xor": {
+        "algorithm": "scrypt-XOR",
+        "key": null,
+        "salt": "c5b7aa0f2ddec7db6cd45f216a8e1b50",
+        "orig_ext": ".docx"
+    },
+    "2. Percentage.xor": {
+        "algorithm": "scrypt-XOR",
+        "key": null,
+        "salt": "44b466197d48999c1fdd29a6542204d5",
+        "orig_ext": ".docx"
+    },
+    "GehuHillAdmitCard (9).xor": {
+        "algorithm": "pbkdf2-XOR",
+        "key": null,
+        "salt": "e73b028dcac145b774e21e7d13231268",
         "orig_ext": ".pdf"
     },
-    "pbl project info-1 (1).xor": {
+    "Even Semester (End Term) Uncommon back paper Examionation June 2025.xor": {
+        "algorithm": "scrypt-XOR",
+        "key": null,
+        "salt": "2cb11fd64b02b8d940f402e035fba8ff",
+        "orig_ext": ".PDF"
+    },
+    "TBC_403_Assignment03.chacha20": {
+        "algorithm": "scrypt-ChaCha20",
+        "key": null,
+        "salt": "57c97ca5e321b7a2b452fd15b5284933",
+        "orig_ext": ".pdf"
+    },
+    "GehuHillAdmitCard (9).chacha20": {
+        "algorithm": "scrypt-ChaCha20",
+        "key": null,
+        "salt": "83329a4e46892f08d65b82050020c97c",
+        "orig_ext": ".pdf"
+    },
+    "test_file_1_40MB.aes": {
+        "algorithm": "AES",
+        "key": "39e57ca4d5bdf8f4e14d878e8c34d047",
+        "orig_ext": ".dat"
+    },
+    "test_file_2_40MB.aes": {
+        "algorithm": "AES",
+        "key": "81d5d9b4579b0fe6c53f56fea56a86fd",
+        "orig_ext": ".dat"
+    },
+    "test_file_3_40MB.aes": {
+        "algorithm": "AES",
+        "key": "fa3400fb8d7fca289a9c91af462d37f6",
+        "orig_ext": ".dat"
+    },
+    "test_file_4_40MB.aes": {
+        "algorithm": "AES",
+        "key": "3bed99bd99ede5b76a07848d41823615",
+        "orig_ext": ".dat"
+    },
+    "algorithm_comparison_test.aes": {
+        "algorithm": "AES",
+        "key": "9c491c6fe7eb0d854788f1d17906c987",
+        "orig_ext": ".dat"
+    },
+    "algorithm_comparison_test.fernet": {
+        "algorithm": "Fernet",
+        "key": "KqkC_Zp16f20IzbEqz5p-38GPFBcRaSeTqflRQe7ekw=",
+        "orig_ext": ".dat"
+    },
+    "algorithm_comparison_test.chacha20": {
+        "algorithm": "ChaCha20",
+        "key": "e499abbf01e122386cc79f23b644045608ccc2ceeac9ecdd76f1498d1244d86f",
+        "orig_ext": ".dat"
+    },
+    "algorithm_comparison_test.des": {
+        "algorithm": "DES",
+        "key": "3c11025bcf9d4125",
+        "orig_ext": ".dat"
+    },
+    "algorithm_comparison_test.blowfish": {
+        "algorithm": "Blowfish",
+        "key": "ff9f29efb745b8fc9ff8ea043f1ed8fd",
+        "orig_ext": ".dat"
+    },
+    "algorithm_comparison_test.xor": {
+        "algorithm": "XOR",
+        "key": "b1b3adf69326a63300d5b690b031fa57",
+        "orig_ext": ".dat"
+    },
+    "quick_benchmark_test.chacha20": {
+        "algorithm": "ChaCha20",
+        "key": "523f091e38f82b08282ce51413662ca4f39f38b55ce495c47d9b6d5a18ae7bbf",
+        "orig_ext": ".dat"
+    },
+    "3rd phase Project Progress Temp-GEHU (1).chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "0bab2c89c11da28df9c5b74f4508b952",
+        "orig_ext": ".docx"
+    },
+    "Project Progress Temp-GEHU abhi new.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "0993b99b58661e30e8ffd531966be5e7",
+        "orig_ext": ".docx"
+    },
+    "quick_benchmark_test.aes": {
+        "algorithm": "AES",
+        "key": "6a8e63a122fdb9aa69387c94d25e0dba",
+        "orig_ext": ".dat"
+    },
+    "3rd phase Project Progress Temp-GEHU (1).aes": {
+        "algorithm": "AES",
+        "key": "cfc7d837b69816bfe8c39b50d5339a30",
+        "orig_ext": ".docx"
+    },
+    "Project Progress Temp-GEHU abhi new.aes": {
+        "algorithm": "AES",
+        "key": "62d30811229e10d3a710511ff6794c94",
+        "orig_ext": ".pdf"
+    },
+    "GehuHillAdmitCard (9).aes": {
+        "algorithm": "scrypt-AES",
+        "key": null,
+        "salt": "6064a5e4a7ae7e882f0d637852e10f7e",
+        "orig_ext": ".pdf"
+    },
+    "3rd phase Project Progress Temp-GEHU (1).fernet": {
+        "algorithm": "scrypt-Fernet",
+        "key": null,
+        "salt": "600d023681e861c500adab3b2b0bdce7",
+        "orig_ext": ".docx"
+    },
+    "Project Progress Temp-GEHU abhi new.fernet": {
+        "algorithm": "custom-Fernet",
+        "key": "cVNOTzVWdmgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "orig_ext": ".pdf"
+    },
+    "3rd phase Project Progress Temp-GEHU (1).des": {
+        "algorithm": "DES",
+        "key": "740e466e5d2c0f37",
+        "orig_ext": ".docx"
+    },
+    "Project Progress Temp-GEHU abhi new.des": {
+        "algorithm": "custom-DES",
+        "key": "69554a6a6f476374",
+        "orig_ext": ".docx"
+    },
+    "Number System Solution Type 1, 2, 3.des": {
+        "algorithm": "custom-DES",
+        "key": "69554a6a6f476374",
+        "orig_ext": ".pptx"
+    },
+    "3rd phase Project Progress Temp-GEHU (1).blowfish": {
+        "algorithm": "Blowfish",
+        "key": "6a78ab64fc2da6c62d5ec60626107030",
+        "orig_ext": ".docx"
+    },
+    "Project Progress Temp-GEHU abhi new.blowfish": {
+        "algorithm": "custom-Blowfish",
+        "key": "4f397851386c68610000000000000000",
+        "orig_ext": ".docx"
+    },
+    "Number System Solution Type 1, 2, 3.blowfish": {
+        "algorithm": "custom-Blowfish",
+        "key": "4f397851386c68610000000000000000",
+        "orig_ext": ".pptx"
+    },
+    "3rd phase Project Progress Temp-GEHU (1).xor": {
+        "algorithm": "XOR",
+        "key": "196d2605c0550045902218289b403353",
+        "orig_ext": ".docx"
+    },
+    "Project Progress Temp-GEHU abhi new.xor": {
+        "algorithm": "custom-XOR",
+        "key": "746b557643466d680000000000000000",
+        "orig_ext": ".docx"
+    },
+    "Number System Solution Type 1, 2, 3.xor": {
+        "algorithm": "custom-XOR",
+        "key": "746b557643466d680000000000000000",
+        "orig_ext": ".pptx"
+    },
+    "TBC_403_Assignment03.xor": {
         "algorithm": "pbkdf2-XOR",
-        "key": "0d33379c002b74ac007b59c45c35eb5d",
-        "salt": "c0268e8c7abadeaecbc510ce15a5e0e9",
+        "key": null,
+        "salt": "aadc64983b2281746b7b6a3d70619d2d",
+        "orig_ext": ".pdf"
+    },
+    "Untitled.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "1d9f2c40683c8f46baa2c9deedbe00a1",
+        "orig_ext": ".pdf"
+    },
+    "Handwritten notes of software engineering.chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "235f8dd089b52e87f3cf9193f9f4692b",
+        "orig_ext": ".pdf"
+    },
+    "Transmission Impairment in Data Communication (2).fernet": {
+        "algorithm": "pbkdf2-Fernet",
+        "key": null,
+        "salt": "425f64ff9a2f6f7212f65be04843331a",
+        "orig_ext": ".pdf"
+    },
+    "Synopsis Template.fernet": {
+        "algorithm": "pbkdf2-Fernet",
+        "key": null,
+        "salt": "6ea95e54b5cccf867322b7cc12164d92",
+        "orig_ext": ".docx"
+    },
+    "quick_benchmark_test.fernet": {
+        "algorithm": "Fernet",
+        "key": "7J9cwp-KhW7KzDA_IRKfJuqjlr5Yh5fEW0dZRXPmoME=",
+        "orig_ext": ".dat"
+    },
+    "complete_notes.fernet": {
+        "algorithm": "custom-Fernet",
+        "key": "MzJKZ0ZMMDMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "orig_ext": ".pdf"
+    },
+    "Unit 5.fernet": {
+        "algorithm": "custom-Fernet",
+        "key": "MzJKZ0ZMMDMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "orig_ext": ".pdf"
+    },
+    "unit 4 software engineering.xor": {
+        "algorithm": "XOR",
+        "key": "025d90f42c8170e308e5c506a9ac2b1e",
+        "orig_ext": ".pdf"
+    },
+    "BCA_4th Sem_23OBC405A_Big Data Analytics_Thompson (1).xor": {
+        "algorithm": "XOR",
+        "key": "a1c3d6ba0bd9e883f53f3f969b3be473",
+        "orig_ext": ".docx"
+    },
+    "quick_benchmark_test.xor": {
+        "algorithm": "XOR",
+        "key": "254962dba4ed9f1ec3b124d20d949c27",
+        "orig_ext": ".dat"
+    },
+    "\u0909\u0924\u094d\u0924\u0930\u093e\u0916\u0902\u0921_\u0935\u0928_\u0926\u0930\u094b\u0917\u093e_\u0935\u093f\u091c\u094d\u091e\u093e\u0928_\u092e\u0939\u093e\u092e\u0948\u0930\u093e\u0925\u0928 (1).chacha20": {
+        "algorithm": "pbkdf2-ChaCha20",
+        "key": null,
+        "salt": "5e47d2d2498386294632ae9bfdfebcec",
+        "orig_ext": ".aes"
+    },
+    "10th marksheet.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": null,
+        "salt": "a97b90986852d893ba586814f2a9dc2c",
+        "orig_ext": ".pdf"
+    },
+    "12th marksheet.aes": {
+        "algorithm": "pbkdf2-AES",
+        "key": null,
+        "salt": "9a8e4a6719189c08e0bb8de43684d621",
         "orig_ext": ".pdf"
     }
 }

@@ -1,0 +1,27 @@
+{
+    "tmplxuu97i2.chacha20": {
+        "algorithm": "ChaCha20",
+        "key": "6142336b4c396d50000000000000000000000000000000000000000000000000",
+        "orig_ext": ".pdf"
+    },
+    "tmppbkh88ha.aes": {
+        "algorithm": "AES",
+        "key": "90ab53d901fdab14020913a0dab204d1",
+        "orig_ext": ".txt"
+    },
+    "tmp54ylfa4n.aes": {
+        "algorithm": "custom-AES",
+        "key": "746573746b6579313233000000000000",
+        "orig_ext": ".txt"
+    },
+    "tmpbjq7v9d4_test1.aes": {
+        "algorithm": "AES",
+        "key": "3814f103236ef0af4d213ae249eb85c7",
+        "orig_ext": ".txt"
+    },
+    "tmpyktlkokg_test3.aes": {
+        "algorithm": "AES",
+        "key": "2023bc286bdad3420679224a9cbf929a",
+        "orig_ext": ".txt"
+    }
+}
